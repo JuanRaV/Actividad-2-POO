@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1675975785 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\main.cpp
+	<iostream>
+	<Cliente.h>
+	<stdlib.h>
+
+1675972725 c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\include\cliente.h
+	<iostream>
+
+1675975812 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\src\cliente.cpp
+	"Cliente.h"
+	<iostream>
+	<string>
+
