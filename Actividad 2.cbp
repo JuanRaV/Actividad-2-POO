@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Cliente.h" />
+		<Unit filename="include/vehiculo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Cliente.cpp" />
+		<Unit filename="src/vehiculo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -31,6 +31,7 @@ void Cliente::Capturar()
     cout<<"Escribe el ID: "<<endl;
     cin>>id_cliente;
 
+
 }
 
 void Cliente::Mostrar()
@@ -86,4 +87,21 @@ void Cliente::Modificar(long id)
     }else{
     cout<<"Ese id no existe"<<endl;}
 
+}
+void Cliente::capturarVehiculo()
+{
+    Vehiculo* V = new Vehiculo();
+    V->Capturar();
+    vehiculos.push_back(V);
+    cout<<"Vehiculo "<< V->placas<<"agregado correctamente"<<endl;
+}
+
+void Cliente::mostrarVehiculo(){
+    for(int i= 0; i <= vehiculos.size();i++){
+        cout<<"Placas: "<<vehiculos[i]->placas <<endl;
+        cout<<"Color: "<<vehiculos[i]->color <<endl;
+        cout<<"Modelo: "<<vehiculos[i]->modelo <<endl;
+        cout<<"Rodado: "<<vehiculos[i]->rodado <<endl;
+
+    }
 }
