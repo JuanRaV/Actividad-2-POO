@@ -7,7 +7,7 @@ int main()
 {
     Cliente cliente[10];
 
-    int opc,id=1;
+    int opc,id,cont = 0;
     do{
         system("cls");
         cout << "==Menu==" << endl;
@@ -16,32 +16,45 @@ int main()
         switch(opc){
             case 1:
 
-                //Cliente cliente_nuevo;
-                //cliente_nuevo.Capturar();
-                //cliente[id] = cliente_nuevo;
-                cliente[id].Capturar(id);
-                id++;
+                for(int i = 0; i < 10;i++){
+                    if(cliente[i].isEmpty()){
+                        Cliente c = Cliente();
+                        c.Capturar();
+                        cliente[i] = c;
+                        cont++;
+                        break;
+                    }
+                }
+
                 break;
 
 
             case 2:
-                for(int i = 1;i<id;i++)
+
+                for(int i = 0;i<cont;i++)
                     cliente[i].Mostrar();
                 system("pause");
                 break;
             case 3:
-                int id;
+
                 cout<<"Escriba el id a modificar"<<endl;cin>>id;
-                cliente[id].Modificar(id);
+                for(int i = 0; i < 10; i++){
+                        if(id == cliente[i].id_cliente){
+
+                        }
+                }
+
                 system("pause");
                 break;
             case 4:
-                cliente->Eliminar();
+                cout<<"Escriba el id de cliente a eliminar"<<endl;cin>>id;
+                cliente[id] = Cliente();
                 break;
             case 5:{
                 int id;
                 cout<<"Escriba el ID del cliente a capturar vehiculo"<<endl;cin>>id;
                 cliente[id].capturarVehiculo();
+                id--;
                 break;
             }
 

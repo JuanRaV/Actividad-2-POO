@@ -17,9 +17,10 @@ class Cliente
         Cliente();
         ~Cliente();
 
-        void Capturar(int );
+        void Capturar( );
         void Mostrar();
         Cliente *Buscar(long);
+        bool isEmpty();
         void Eliminar();
         void Modificar(long);
         void capturarVehiculo();

@@ -32,11 +32,7 @@ void Vehiculo::Capturar()
 }
 
 
-void Vehiculo::Eliminar(string placas)
-{
 
-
-}
 
 void Vehiculo::Modificar(string)
 {

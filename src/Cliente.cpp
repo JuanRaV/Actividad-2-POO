@@ -14,7 +14,7 @@ Cliente::~Cliente()
 {
     //dtor
 }
-void Cliente::Capturar(int id)
+void Cliente::Capturar()
 {
     cout<<"Escribe el nombre: "<<endl;
     cin>>nombre;
@@ -28,7 +28,9 @@ void Cliente::Capturar(int id)
     cout<<"Escribe el numero de telefono: "<<endl;
     cin>>telefono;
 
-    id_cliente=id;
+    cout<<"Escribe el id de cliente: "<<endl;
+    cin>>id_cliente;
+
 
 
 }
@@ -105,5 +107,9 @@ void Cliente::mostrarVehiculo(){
         cout<<"----------------------------"<<endl;
     }
     system("pause");
+}
+bool Cliente::isEmpty()
+{
+    return nombre == "" or rfc == "" or email == "" or telefono == "" or id_cliente == -1 ? true : false;
 }
 
