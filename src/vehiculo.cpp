@@ -31,13 +31,10 @@ void Vehiculo::Capturar()
 
 }
 
-void Vehiculo::Mostrar()
+
+void Vehiculo::Eliminar(string placas)
 {
 
-}
-
-void Vehiculo::Eliminar(string)
-{
 
 }
 

@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1676303945 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\main.cpp
+1676566666 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\main.cpp
 	<iostream>
 	<Cliente.h>
 	<stdlib.h>
 
-1676303794 c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\include\cliente.h
+1676566454 c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\include\cliente.h
 	<iostream>
 	<vector>
 	<vehiculo.h>
 
-1676304145 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\src\cliente.cpp
+1676566448 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\src\cliente.cpp
 	"Cliente.h"
 	<iostream>
 	<string>
@@ -18,7 +18,7 @@
 	<string>
 	<stdlib.h>
 
-1676303750 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\src\vehiculo.cpp
+1676576499 source:c:\users\juanr_axzldpc\onedrive\documentos\4to semestre\poo\actividad 2\src\vehiculo.cpp
 	"vehiculo.h"
 	<iostream>
 

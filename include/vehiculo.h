@@ -17,7 +17,7 @@ class Vehiculo
 
         void Capturar();
         void Mostrar();
-        void Eliminar(string);
+        void Eliminar();
         void Modificar(string);
         Vehiculo* Buscar(string);
 

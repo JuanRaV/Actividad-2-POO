@@ -14,7 +14,7 @@ Cliente::~Cliente()
 {
     //dtor
 }
-void Cliente::Capturar()
+void Cliente::Capturar(int id)
 {
     cout<<"Escribe el nombre: "<<endl;
     cin>>nombre;
@@ -28,21 +28,21 @@ void Cliente::Capturar()
     cout<<"Escribe el numero de telefono: "<<endl;
     cin>>telefono;
 
-    cout<<"Escribe el ID: "<<endl;
-    cin>>id_cliente;
+    id_cliente=id;
 
 
 }
 
 void Cliente::Mostrar()
 {
-
     cout<<"==DATOS DE: "<<nombre<<"=="<<endl;
     cout<<"ID: "<<id_cliente<<endl;
     cout<<"RFC: "<<rfc<<endl;
     cout<<"EMAIL: "<<email<<endl;
     cout<<"TELEFONO: "<<telefono<<endl;
     cout<<"-----------------------"<<endl<<endl;
+
+
 }
 
 Cliente* Cliente::Buscar(long)
@@ -97,11 +97,13 @@ void Cliente::capturarVehiculo()
 }
 
 void Cliente::mostrarVehiculo(){
-    for(int i= 0; i <= vehiculos.size();i++){
+    for(int i= 0; i < vehiculos.size();i++){
         cout<<"Placas: "<<vehiculos[i]->placas <<endl;
         cout<<"Color: "<<vehiculos[i]->color <<endl;
         cout<<"Modelo: "<<vehiculos[i]->modelo <<endl;
         cout<<"Rodado: "<<vehiculos[i]->rodado <<endl;
-
+        cout<<"----------------------------"<<endl;
     }
+    system("pause");
 }
+

@@ -7,24 +7,25 @@ int main()
 {
     Cliente cliente[10];
 
-    int opc,cont=1;
+    int opc,id=1;
     do{
         system("cls");
         cout << "==Menu==" << endl;
         cout<<"1.-Capturar"<<endl<<"2.-Mostrar"<<endl<<"3.-Modificar"<<endl<<"4.-Eliminar"<<endl<<"5.-Capturar vehiculo"
-        <<endl<<"6.-Mostrar vehiculos"<<endl<<"7.-Salir"<<endl<<"Elige una opcion"<<endl;cin>>opc;
+        <<endl<<"6.-Mostrar vehiculos"<<endl<<"7.-Eliminar vehiculo"<<endl<<"8.-Salir"<<endl<<"Elige una opcion"<<endl;cin>>opc;
         switch(opc){
-            case 1:{
-                //id++;
+            case 1:
+
                 //Cliente cliente_nuevo;
                 //cliente_nuevo.Capturar();
                 //cliente[id] = cliente_nuevo;
-                cliente[cont].Capturar();cont++;
+                cliente[id].Capturar(id);
+                id++;
                 break;
-            }
+
 
             case 2:
-                for(int i = 1;i<cont;i++)
+                for(int i = 1;i<id;i++)
                     cliente[i].Mostrar();
                 system("pause");
                 break;
@@ -51,11 +52,18 @@ int main()
                     cliente[id].mostrarVehiculo();
                 }
                 break;
+            case 7:{
+                string placas;
+                cout<<"Escribe las placas a eliminar";cin>>placas;
+
+                break;
+            }
+
             default:
                 cout<<"Elija una opcion valida"<<endl;
 
         }
-    }while(opc!=7);
+    }while(opc!=8);
 
 
     return 0;

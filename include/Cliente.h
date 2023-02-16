@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<vehiculo.h>
+#include<string>
 using namespace std;
 class Cliente
 {
@@ -16,13 +17,14 @@ class Cliente
         Cliente();
         ~Cliente();
 
-        void Capturar();
+        void Capturar(int );
         void Mostrar();
         Cliente *Buscar(long);
         void Eliminar();
         void Modificar(long);
         void capturarVehiculo();
         void mostrarVehiculo();
+
 };
 
 
