@@ -1,6 +1,7 @@
 #include <iostream>
 #include<Cliente.h>
 #include<stdlib.h>
+#include "factura.h"
 using namespace std;
 
 int main()
@@ -12,7 +13,7 @@ int main()
         system("cls");
         cout << "==Menu==" << endl;
         cout<<"1.-Capturar"<<endl<<"2.-Mostrar"<<endl<<"3.-Modificar"<<endl<<"4.-Eliminar"<<endl<<"5.-Capturar vehiculo"
-        <<endl<<"6.-Mostrar vehiculos"<<endl<<"7.-Eliminar vehiculo"<<endl<<"8.-Salir"<<endl<<"Elige una opcion"<<endl;cin>>opc;
+        <<endl<<"6.-Mostrar vehiculos"<<endl<<"7.-Eliminar vehiculo"<<endl<<"8.-Capturar factura"<<"9.-Salir"<<endl<<"Elige una opcion"<<endl;cin>>opc;
         switch(opc){
             case 1:
 
@@ -51,11 +52,7 @@ int main()
                 for(int i = 0; i < 10; i++){
                         if(id == cliente[i].id_cliente){
                             for(int j = i; j<9; j++){
-                                    if(cliente[j].isEmpty()){
-                                        break;
-                                    }else{
-                                    cliente[j] = cliente[j+1];}
-
+                                    cliente[j] = cliente[j+1];
 
                             }
                         }
@@ -82,12 +79,19 @@ int main()
 
                 break;
             }
+            case 8:
+                {
+                    Factura f = Factura();
+
+
+                }
+            break;
 
             default:
                 cout<<"Elija una opcion valida"<<endl;
 
         }
-    }while(opc!=8);
+    }while(opc!= 9);
 
 
     return 0;
