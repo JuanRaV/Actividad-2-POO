@@ -20,6 +20,7 @@ class Vehiculo
         void Eliminar();
         void Modificar(string);
         Vehiculo* Buscar(string);
+        bool isEmpty();
 
 };
 

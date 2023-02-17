@@ -54,3 +54,29 @@
 1676601996 c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\include\factura.h
 	<string>
 
+1676604739 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\cliente.cpp
+	"Cliente.h"
+	<iostream>
+	<string>
+
+1676604739 c:\users\samme\onedrive\escritorio\actividad-2-poo\include\cliente.h
+	<iostream>
+	<vector>
+	<vehiculo.h>
+	<string>
+
+1676606184 c:\users\samme\onedrive\escritorio\actividad-2-poo\include\vehiculo.h
+	<string>
+	<stdlib.h>
+
+1676604744 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\factura.cpp
+	"factura.h"
+	<iostream>
+
+1676604744 c:\users\samme\onedrive\escritorio\actividad-2-poo\include\factura.h
+	<string>
+
+1676606285 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\vehiculo.cpp
+	"vehiculo.h"
+	<iostream>
+
