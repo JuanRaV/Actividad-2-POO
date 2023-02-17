@@ -51,8 +51,11 @@ int main()
                 for(int i = 0; i < 10; i++){
                         if(id == cliente[i].id_cliente){
                             for(int j = i; j<9; j++){
+                                    if(cliente[j].isEmpty()){
+                                        break;
+                                    }else{
+                                    cliente[j] = cliente[j+1];}
 
-                                    cliente[j] = cliente[j+1];
 
                             }
                         }
