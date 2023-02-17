@@ -12,8 +12,10 @@ int main()
     do{
         system("cls");
         cout << "==Menu==" << endl;
-        cout<<"1.-Capturar"<<endl<<"2.-Mostrar"<<endl<<"3.-Modificar"<<endl<<"4.-Eliminar"<<endl<<"5.-Capturar vehiculo"
-        <<endl<<"6.-Mostrar vehiculos"<<endl<<"7.-Eliminar vehiculo"<<endl<<"8.-Capturar factura"<<"9.-Salir"<<endl<<"Elige una opcion"<<endl;cin>>opc;
+
+        cout<<"Escribe
+        cout<<"1.-Capturar cliente"<<endl<<"2.-Mostrar cliente"<<endl<<"3.-Modificar cliente"<<endl<<"4.-Eliminar cliente"<<endl<<"5.-Salir"<<endl;cin>>opc;
+
         switch(opc){
             case 1:
 
@@ -52,46 +54,53 @@ int main()
                 for(int i = 0; i < 10; i++){
                         if(id == cliente[i].id_cliente){
                             for(int j = i; j<9; j++){
-                                    cliente[j] = cliente[j+1];
+
+                                    if(cliente[j].isEmpty())
+                                        break;
+                                    else{
+                                        cliente[j] = cliente[j+1];
+                                        cont--;
+                                    }
+
 
                             }
+                            for(int i = 0;i<=cont;i++)
+                                cliente[i].Mostrar();
                         }
                 }
+                cout<<"Cliente eliminado correctamente"<<endl;
+                system("pause");
                 break;
-            case 5:{
-                /*int id;
+            /*case 5:{
+                int id;
                 cout<<"Escriba el ID del cliente a capturar vehiculo"<<endl;cin>>id;
                 cliente[id].capturarVehiculo();
-                id--;*/
+                id--;
                 break;
             }
 
             case 6:
-                /*{
+                {
                     int id;
                     cout<<"Escriba el ID del cliente a mostrar sus vehiculos"<<endl;cin>>id;
                     cliente[id].mostrarVehiculo();
-                }*/
+                }
                 break;
             case 7:{
                 string placas;
                 cout<<"Escribe las placas a eliminar";cin>>placas;
 
                 break;
-            }
-            case 8:
-                {
-                    Factura f = Factura();
 
-
-                }
-            break;
+            }*/
 
             default:
                 cout<<"Elija una opcion valida"<<endl;
 
         }
-    }while(opc!= 9);
+
+    }while(opc!=5);
+
 
 
     return 0;
