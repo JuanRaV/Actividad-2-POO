@@ -2,19 +2,25 @@
 #include<Cliente.h>
 #include<stdlib.h>
 #include "factura.h"
+#include "vehiculo.h"
 using namespace std;
 
 int main()
 {
     Cliente cliente[10];
+    Vehiculo vehiculos[10];
 
     int opc,id,cont = 0;
+    int contV=0;
+    string plc;
     do{
         system("cls");
         cout << "==Menu==" << endl;
 
-        cout<<"Escribe
-        cout<<"1.-Capturar cliente"<<endl<<"2.-Mostrar cliente"<<endl<<"3.-Modificar cliente"<<endl<<"4.-Eliminar cliente"<<endl<<"5.-Salir"<<endl;cin>>opc;
+        cout<<"Escribe"<<endl;
+        cout<<"1.-Capturar cliente"<<endl<<"2.-Mostrar cliente"<<endl<<"3.-Modificar cliente"<<endl<<"4.-Eliminar cliente"<<endl<< "5.- Capturar vehiculo"<<endl;
+        cout<< "6.- Mostrar vehiculos"<<endl<< "7.-Modificar vehiculo"<<endl<< "8.-Eliminar vehiculo"<<endl<< "9.-Salir"<<endl;
+        cin>>opc;
 
         switch(opc){
             case 1:
@@ -71,6 +77,60 @@ int main()
                 cout<<"Cliente eliminado correctamente"<<endl;
                 system("pause");
                 break;
+            case 5:
+
+                for(int i=0; i<10; i++){
+                    if(vehiculos[i].isEmpty()){
+                        Vehiculo v = Vehiculo();
+                        v.Capturar();
+                        vehiculos[i] = v;
+                        contV++;
+                        break;
+                    }
+                }
+                system("pause");
+                break;
+            case 6:
+                for(int i=0; i<=contV; i++){
+                    vehiculos[i].Mostrar();
+
+                }
+                system("pause");
+                break;
+            case 7:
+                cout<< "Ingrese las placas del vehiculo que desea modificar: "; cin>>plc;
+                for(int i=0; i<10; i++){
+                    if(plc == vehiculos[i].placas){
+                        vehiculos[i].Modificar(plc);
+                    }
+                }
+                system("pause");
+                break;
+            case 8:
+                 cout<<"Ingrese las placas del vehiculo que desea eliminar: "<<endl;cin>>plc;
+                for(int i = 0; i < 10; i++){
+                        if(plc == vehiculos[i].placas){
+                            for(int j = i; j<9; j++){
+
+                                    if(vehiculos[j].isEmpty())
+                                        break;
+                                    else{
+                                        vehiculos[j] = vehiculos[j+1];
+                                        contV--;
+                                    }
+
+
+                            }
+                            for(int i = 0;i<=contV;i++)
+                                vehiculos[i].Mostrar();
+                        }
+                }
+                cout<<"Cliente eliminado correctamente"<<endl;
+                system("pause");
+                break;
+            case 9:
+                break;
+            default: cout<< "Seleccione una opcion valida"<<endl;
             /*case 5:{
                 int id;
                 cout<<"Escriba el ID del cliente a capturar vehiculo"<<endl;cin>>id;
@@ -94,12 +154,11 @@ int main()
 
             }*/
 
-            default:
-                cout<<"Elija una opcion valida"<<endl;
+
 
         }
 
-    }while(opc!=5);
+    }while(opc!=9);
 
 
 
