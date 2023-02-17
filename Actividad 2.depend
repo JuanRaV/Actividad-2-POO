@@ -22,12 +22,12 @@
 	"vehiculo.h"
 	<iostream>
 
-1676580668 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\main.cpp
+1676599858 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\main.cpp
 	<iostream>
 	<Cliente.h>
 	<stdlib.h>
 
-1676580576 c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\include\cliente.h
+1676599791 c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\include\cliente.h
 	<iostream>
 	<vector>
 	<vehiculo.h>
@@ -37,12 +37,12 @@
 	<string>
 	<stdlib.h>
 
-1676580634 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\src\cliente.cpp
+1676599806 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\src\cliente.cpp
 	"Cliente.h"
 	<iostream>
 	<string>
 
-1676578747 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\src\vehiculo.cpp
+1676599701 source:c:\users\user\onedrive - universidad de guadalajara\4to sem\poo\actividad-2-poo\src\vehiculo.cpp
 	"vehiculo.h"
 	<iostream>
 

@@ -40,7 +40,7 @@ int main()
                 cout<<"Escriba el id a modificar"<<endl;cin>>id;
                 for(int i = 0; i < 10; i++){
                         if(id == cliente[i].id_cliente){
-
+                            cliente[i].Modificar();
                         }
                 }
 

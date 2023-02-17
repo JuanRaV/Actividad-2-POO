@@ -22,7 +22,7 @@ class Cliente
         Cliente *Buscar(long);
         bool isEmpty();
         void Eliminar();
-        void Modificar(long);
+        void Modificar();
         void capturarVehiculo();
         void mostrarVehiculo();
 

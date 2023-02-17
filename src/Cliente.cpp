@@ -57,9 +57,9 @@ void Cliente::Eliminar()
 
 }
 
-void Cliente::Modificar(long id)
+void Cliente::Modificar()
 {
-    if(id==id_cliente){
+
         int opcion;
         cout<<"Que dato desea modificar"<<endl;
         cout<<"1.-Nombre"<<endl<<"2.-RFC"<<endl<<"3.-Email"<<endl<<"4.-Telefono"<<endl<<"5.-No quiero editar"<<endl;cin>>opcion;
@@ -85,9 +85,7 @@ void Cliente::Modificar(long id)
         break;
         default: cout<<"Elija una opcion correcta"<<endl;
 
-        }
-    }else{
-    cout<<"Ese id no existe"<<endl;}
+        };
 
 }
 void Cliente::capturarVehiculo()
