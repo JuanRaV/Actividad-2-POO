@@ -48,22 +48,30 @@ int main()
                 break;
             case 4:
                 cout<<"Escriba el id de cliente a eliminar"<<endl;cin>>id;
-                cliente[id] = Cliente();
+                for(int i = 0; i < 10; i++){
+                        if(id == cliente[i].id_cliente){
+                            for(int j = i-1; j<9; j++){
+
+                                    cliente[j] = cliente[j+1];
+
+                            }
+                        }
+                }
                 break;
             case 5:{
-                int id;
+                /*int id;
                 cout<<"Escriba el ID del cliente a capturar vehiculo"<<endl;cin>>id;
                 cliente[id].capturarVehiculo();
-                id--;
+                id--;*/
                 break;
             }
 
             case 6:
-                {
+                /*{
                     int id;
                     cout<<"Escriba el ID del cliente a mostrar sus vehiculos"<<endl;cin>>id;
                     cliente[id].mostrarVehiculo();
-                }
+                }*/
                 break;
             case 7:{
                 string placas;
