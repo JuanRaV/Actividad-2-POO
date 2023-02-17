@@ -18,8 +18,8 @@ int main()
         cout << "==Menu==" << endl;
 
         cout<<"Escribe"<<endl;
-        cout<<"1.-Capturar cliente"<<endl<<"2.-Mostrar cliente"<<endl<<"3.-Modificar cliente"<<endl<<"4.-Eliminar cliente"<<endl<< "5.- Capturar vehiculo"<<endl;
-        cout<< "6.- Mostrar vehiculos"<<endl<< "7.-Modificar vehiculo"<<endl<< "8.-Eliminar vehiculo"<<endl<< "9.-Salir"<<endl;
+        cout<<"1.-Capturar cliente"<<endl<<"2.-Mostrar cliente"<<endl<<"3.-Modificar cliente"<<endl<<"4.-Eliminar cliente"<<endl<< "5.-Buscar Cliente"<<endl<<"6.- Capturar vehiculo"<<endl;
+        cout<< "7.- Mostrar vehiculos"<<endl<< "8.-Modificar vehiculo"<<endl<< "9.-Eliminar vehiculo"<<endl<< "10.-Buscar Vehiculo"<<endl<< "11.-Salir"<<endl;
         cin>>opc;
 
         switch(opc){
@@ -78,6 +78,15 @@ int main()
                 system("pause");
                 break;
             case 5:
+                cout<< "Ingrese el Id del cliente que desea buscar: "; cin>>id;
+                for(int i=0; i<10; i++){
+                    if(id == cliente[i].id_cliente){
+                        cliente[i].Mostrar();
+                    }
+                }
+                system("pause");
+                break;
+            case 6:
 
                 for(int i=0; i<10; i++){
                     if(vehiculos[i].isEmpty()){
@@ -90,14 +99,14 @@ int main()
                 }
                 system("pause");
                 break;
-            case 6:
+            case 7:
                 for(int i=0; i<=contV; i++){
                     vehiculos[i].Mostrar();
 
                 }
                 system("pause");
                 break;
-            case 7:
+            case 8:
                 cout<< "Ingrese las placas del vehiculo que desea modificar: "; cin>>plc;
                 for(int i=0; i<10; i++){
                     if(plc == vehiculos[i].placas){
@@ -106,7 +115,7 @@ int main()
                 }
                 system("pause");
                 break;
-            case 8:
+            case 9:
                  cout<<"Ingrese las placas del vehiculo que desea eliminar: "<<endl;cin>>plc;
                 for(int i = 0; i < 10; i++){
                         if(plc == vehiculos[i].placas){
@@ -128,7 +137,18 @@ int main()
                 cout<<"Cliente eliminado correctamente"<<endl;
                 system("pause");
                 break;
-            case 9:
+            case 10:
+                cout<< "Ingrese las placas del vehiculo que desea buscar: "; cin>>plc;
+
+                for(int i=0; i<10; i++){
+                    if(plc == vehiculos[i].placas){
+                        vehiculos[i].Mostrar();
+                    }
+                }
+                system("pause");
+
+                break;
+            case 11:
                 break;
             default: cout<< "Seleccione una opcion valida"<<endl;
             /*case 5:{

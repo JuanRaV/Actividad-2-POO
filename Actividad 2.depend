@@ -69,14 +69,21 @@
 	<string>
 	<stdlib.h>
 
-1676604744 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\factura.cpp
+1676655916 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\factura.cpp
 	"factura.h"
 	<iostream>
 
 1676604744 c:\users\samme\onedrive\escritorio\actividad-2-poo\include\factura.h
 	<string>
 
-1676606285 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\vehiculo.cpp
+1676607897 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\src\vehiculo.cpp
 	"vehiculo.h"
 	<iostream>
+
+1676655907 source:c:\users\samme\onedrive\escritorio\actividad-2-poo\main.cpp
+	<iostream>
+	<Cliente.h>
+	<stdlib.h>
+	"factura.h"
+	"vehiculo.h"
 
